@@ -1,0 +1,33 @@
+.header{position: fixed;top:0px;width:100%;
+background-color:$colorGray;
+@include padding($header TopPadding 15px $headerBottomPadding 15px);
+@include box-sizing(border-box);
+ .navbar{width:100%;height:40px;
+div{display: inline-block;}
+ .navbar_brand{max-width:60%;float:left;font-family:$fontLogo;height:100%;
+a{text-transform:uppercase;color:$colorMain;font-size:1.8em;position:relative;top:-2px;
+@include transition(color 0.3s $ease-in-out-quad);
+ a:hover {
+color: $colorMainDark;
+}
+       }
+     }
+ .navbar_menu{
+    float:right;
+    top:5px;
+ margin-right:40px;
+     
+    .menu{
+       margin:0px;
+  .menu_item{
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 20px;
+         }
+       }
+   
+      }
+    }
+  }
+
+}
